@@ -1,0 +1,117 @@
+:root{
+    --primary-color:#0a1118;
+    --primary-color-higlight:#233D54;
+    --bs-booy-bg:#FBF0F6;
+    
+}
+a {color: var(--primary-color);}
+body{
+    background: #f7eebb;
+}
+.header{
+    z-index: 2;
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    bottom: o;
+    right: 0;
+    left: 0;
+    z-index: 4;
+    background-color: #f7eebb;
+}
+.bclose{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    font-size: 20px;
+}
+
+/*-------MAIN---------*/
+
+.hero{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.vid{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%,-50%);
+}
+.opac{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    opacity: 0.5;
+    z-index: 1;
+    overflow: hidden;
+}
+.text-op{
+    z-index: 1;
+}
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%);
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+}
+a .bi{
+    font-size: 20px;
+    transition: 0.8s;
+    animation: bounce alternate 1s infinite;
+}
+@keyframes bounce {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+}
+.img-coffe{
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+.text-img{
+    transform: translateY(30%);
+}
+.text-mb{
+    transform: translateY(-5%);
+
+}
+
+@media (max-width: 600px){
+
+    
+}
+.f-img{
+    border-radius: 10px;
+}
+/*Responsive*/
+@media (min-width:370px) and (max-width:780px) {
+    .collapse h3{
+        font-size: 1.5rem !important;
+    }
+    #navbar{
+        max-height: 100%;
+        overflow:scroll;
+    }
+    
+}
